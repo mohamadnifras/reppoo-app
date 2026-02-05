@@ -1,9 +1,13 @@
-import Navbar from "@/components/Navbar";
 
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/features/herosection/HeroSection"
 export default function Home() {
   return (
     <div>
-      <Navbar />
+      <div className="fixed top-0 left-0 right-0 z-50">
+        <Navbar />
+      </div>
+      <HeroSection />
     </div>
   );
 }

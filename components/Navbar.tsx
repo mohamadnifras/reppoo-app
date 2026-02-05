@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 function Navbar() {
   return (
-    <div className='border-b border-gray-100 bg-[#F9F9F9]'>
+    <div className='border-b border-gray-100 bg-[#F9F9F9] '>
       <div className='px-6 h-16 flex items-center justify-between'>
         <div className='flex items-center gap-2'>
           <Image src="/logo.png" alt="Logo" width={30} height={30} />

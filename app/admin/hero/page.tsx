@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 
+
 function HeroPage() {
   const [title, setTitle] = useState("");
   const [subtitle, setSubtitle] = useState("");
@@ -127,7 +128,7 @@ function HeroPage() {
             </label>
             <div className="space-y-4">
               {(preview || currentImage) && (
-                <div className="relative w-full aspect-[21/9] rounded-xl border border-gray-200 bg-gray-50 overflow-hidden shadow-inner group">
+                <div className="relative w-full aspect-21/9 rounded-xl border border-gray-200 bg-gray-50 overflow-hidden shadow-inner group">
                   <img
                     src={preview || currentImage || ""}
                     alt="Preview"
