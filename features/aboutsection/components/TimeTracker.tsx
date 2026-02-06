@@ -85,7 +85,7 @@ function TimeTracker() {
                         <div key={item} className='flex items-center justify-between group cursor-pointer hover:bg-gray-50 p-2 -m-2 rounded-xl transition-colors'>
                             <div className='flex items-center gap-3'>
                                 <div className='bg-indigo-50 text-indigo-500 w-10 h-10 rounded-xl flex items-center justify-center border border-indigo-100/50 shadow-sm'>
-                                    <Image src="/logo.png" alt="Task" width={22} height={22} className="opacity-80" />
+                                    <Image src="/mainlogo.png" alt="Task" width={22} height={22} className="opacity-80" />
                                 </div>
                                 <div className='space-y-0.5'>
                                     <p className='text-sm font-bold text-gray-800 leading-none'>Loom UI Design system</p>
