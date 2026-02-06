@@ -9,7 +9,7 @@ export function FooterBrand() {
             <Link href="/" className="flex items-center gap-2 group">
                 <div className="relative w-8 h-8 flex items-center justify-center">
                     <Image
-                        src="/logo.png"
+                        src="/mainlogo.png"
                         alt="Reppoo Logo"
                         width={32}
                         height={32}

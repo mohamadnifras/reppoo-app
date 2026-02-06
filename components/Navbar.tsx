@@ -7,7 +7,7 @@ function Navbar() {
     <div className='border-b border-gray-100 bg-[#F9F9F9] '>
       <div className='px-6 h-16 flex items-center justify-between'>
         <div className='flex items-center gap-2'>
-          <Image src="/logo.png" alt="Logo" width={30} height={30} />
+          <Image src="/mainlogo.png" alt="Logo" width={30} height={30} />
           <p className='font-medium text-lg'>Reppoo</p>
         </div>
         <div>
