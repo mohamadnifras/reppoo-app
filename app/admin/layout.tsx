@@ -84,7 +84,7 @@ export default function AdminLayout({
           </ul>
         </nav>
 
-        <div className="absolute bottom-50 left-6">
+        <div className="absolute bottom-96 left-6">
           <button
             onClick={handleLogout}
             className="text-xs text-gray-500 hover:text-white transition-colors cursor-pointer uppercase font-medium"
