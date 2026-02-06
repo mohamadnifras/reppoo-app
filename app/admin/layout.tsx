@@ -72,7 +72,7 @@ export default function AdminLayout({
           </ul>
         </nav>
 
-        <div className="absolute bottom-8 left-6">
+        <div className="absolute bottom-50 left-6">
           <Link href="/" className="text-xs text-gray-500 hover:text-white transition-colors">
             ← Logout
           </Link>

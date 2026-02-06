@@ -54,7 +54,7 @@ function HeroSection() {
 
 
                             {/* Mask Image - Inside the Phone */}
-                            <div className="absolute top-39 left-[4%] right-[4%] bottom-[22.2%] z-20 overflow-hidden rounded-t-[38px]">
+                            <div className="absolute top-35 md:top-39 left-[4%] right-[4%] bottom-[22.9%] md:bottom-[22.2%] z-20 overflow-hidden rounded-t-[38px]">
                                 {heroData?.image && (
                                     <Image
                                         src={heroData.image}
