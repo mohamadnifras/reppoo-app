@@ -4,6 +4,8 @@ import HeroSection from "@/features/herosection/HeroSection"
 import About from "@/features/aboutsection/About"
 import Testimonials from "@/features/testimonials/Testimonials";
 import FaqSection from "@/features/faqsection/FaqSection";
+import SpecialOffer from "@/features/offerpage/SpecialOffer";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -13,8 +15,11 @@ export default function Home() {
       </div>
       <HeroSection />
       <About />
-      <Testimonials/>
-      <FaqSection/>
+      <Testimonials />
+      <FaqSection />
+      <SpecialOffer />
+      <Footer />
     </main>
   );
 }
+

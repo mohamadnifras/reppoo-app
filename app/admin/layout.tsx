@@ -19,10 +19,23 @@ export default function AdminLayout({
     { name: "FAQ", href: "/admin/faq" },
   ];
 
+  const handleLogout = async () => {
+    try {
+      const res = await fetch("/api/admin/auth/logout", {
+        method: "POST",
+      });
+      if (res.ok) {
+        window.location.href = "/";
+      }
+    } catch (error) {
+      console.error("Logout failed:", error);
+    }
+  };
+
   return (
     <div className="flex min-h-screen bg-gray-50 uppercase font-medium">
       {/* Mobile Toggle Button */}
-      <button 
+      <button
         onClick={() => setIsSidebarOpen(!isSidebarOpen)}
         className="fixed top-4 left-4 z-50 p-2 bg-[#111] text-white rounded-md lg:hidden shadow-lg"
       >
@@ -37,7 +50,7 @@ export default function AdminLayout({
 
       {/* Sidebar Overlay */}
       {isSidebarOpen && (
-        <div 
+        <div
           onClick={() => setIsSidebarOpen(false)}
           className="fixed inset-0 bg-black/50 z-40 lg:hidden backdrop-blur-sm"
         />
@@ -57,12 +70,11 @@ export default function AdminLayout({
               const isActive = pathname === item.href;
               return (
                 <li key={item.href}>
-                  <Link 
+                  <Link
                     href={item.href}
                     onClick={() => setIsSidebarOpen(false)}
-                    className={`block py-2 text-sm transition-colors ${
-                      isActive ? 'text-white' : 'text-gray-400 hover:text-white'
-                    }`}
+                    className={`block py-2 text-sm transition-colors ${isActive ? 'text-white' : 'text-gray-400 hover:text-white'
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -73,9 +85,12 @@ export default function AdminLayout({
         </nav>
 
         <div className="absolute bottom-50 left-6">
-          <Link href="/" className="text-xs text-gray-500 hover:text-white transition-colors">
+          <button
+            onClick={handleLogout}
+            className="text-xs text-gray-500 hover:text-white transition-colors cursor-pointer uppercase font-medium"
+          >
             ← Logout
-          </Link>
+          </button>
         </div>
       </aside>
 
