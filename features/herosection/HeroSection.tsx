@@ -38,7 +38,7 @@ function HeroSection() {
                 <div className='flex items-center justify-center w-full max-w-7xl mx-auto px-4 gap-4 lg:gap-0 overflow-visible'>
                     {/* Left Frame - Keep Hidden on Mobile */}
                     <div className='hidden lg:block transform -translate-x-12 translate-y-12 rotate-[-4deg] animate-float-slow'>
-                        <Image src="/hero_frame2.png" alt="hero-frame-2" width={320} height={220} className="drop-shadow-2xl" />
+                        <Image src="/hero_frame2.png" alt="hero-frame-2" width={320} height={220} className="drop-shadow-2xl drop-shadow-[#70D9FF]" />
                     </div>
 
                     {/* Center Phone Mockup */}
@@ -82,7 +82,7 @@ function HeroSection() {
 
                     {/* Right Frame - Keep Hidden on Mobile */}
                     <div className='hidden lg:block transform translate-x-12 translate-y-12 rotate-[4deg] animate-float'>
-                        <Image src="/hero_frame1.png" alt="hero-frame-1" width={320} height={220} className="drop-shadow-2xl" />
+                        <Image src="/hero_frame1.png" alt="hero-frame-1" width={320} height={220} className="drop-shadow-2xl drop-shadow-[#FFE5AA]" />
                     </div>
                 </div>
 
